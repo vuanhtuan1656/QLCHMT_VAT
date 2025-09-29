@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD8D29BD-7579-481E-9D26-126F171B088D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QuanLyCuaHangMT.My.MyApplication</StartupObject>
+    <RootNamespace>QuanLyCuaHangMT</RootNamespace>
+    <AssemblyName>QuanLyCuaHangMT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QuanLyCuaHangMT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QuanLyCuaHangMT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BaoCaoHoaDonB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoHoaDonB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCaoHoaDonN.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoHoaDonN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Chi_Tiet_Hoa_Don_Nhap.Designer.vb">
+      <DependentUpon>F_Chi_Tiet_Hoa_Don_Nhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Chi_Tiet_Hoa_Don_Nhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Hoa_Don_Nhap.Designer.vb">
+      <DependentUpon>F_Hoa_Don_Nhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Hoa_Don_Nhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_LoaiSanPham.Designer.vb">
+      <DependentUpon>F_LoaiSanPham.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_LoaiSanPham.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Menu.Designer.vb">
+      <DependentUpon>F_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Nha_Cung_Cap.Designer.vb">
+      <DependentUpon>F_Nha_Cung_Cap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Nha_Cung_Cap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SanPham.Designer.vb">
+      <DependentUpon>F_SanPham.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_SanPham.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonB.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDonB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="F_BaoHanh.Designer.vb">
+      <DependentUpon>F_BaoHanh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_BaoHanh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ChiTietHoaDon.Designer.vb">
+      <DependentUpon>F_ChiTietHoaDon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_ChiTietHoaDon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_HoaDon.Designer.vb">
+      <DependentUpon>F_HoaDon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_HoaDon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_KhachHang.Designer.vb">
+      <DependentUpon>F_KhachHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_KhachHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DangKy.Designer.vb">
+      <DependentUpon>F_DangKy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_DangKy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DangNhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DangNhap.Designer.vb">
+      <DependentUpon>F_DangNhap.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_NhanVien.Designer.vb">
+      <DependentUpon>F_NhanVien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_NhanVien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonBTableAdapters\CHI_TIET_HOA_DONTableAdapter.vb" />
+    <Compile Include="HoaDonN.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDonN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaoCaoHoaDonB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoHoaDonB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoHoaDonN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoHoaDonN.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_BaoHanh.resx">
+      <DependentUpon>F_BaoHanh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ChiTietHoaDon.resx">
+      <DependentUpon>F_ChiTietHoaDon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Chi_Tiet_Hoa_Don_Nhap.resx">
+      <DependentUpon>F_Chi_Tiet_Hoa_Don_Nhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DangKy.resx">
+      <DependentUpon>F_DangKy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DangNhap.resx">
+      <DependentUpon>F_DangNhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_HoaDon.resx">
+      <DependentUpon>F_HoaDon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Hoa_Don_Nhap.resx">
+      <DependentUpon>F_Hoa_Don_Nhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_KhachHang.resx">
+      <DependentUpon>F_KhachHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LoaiSanPham.resx">
+      <DependentUpon>F_LoaiSanPham.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Menu.resx">
+      <DependentUpon>F_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_NhanVien.resx">
+      <DependentUpon>F_NhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Nha_Cung_Cap.resx">
+      <DependentUpon>F_Nha_Cung_Cap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SanPham.resx">
+      <DependentUpon>F_SanPham.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HoaDonB.xsc">
+      <DependentUpon>HoaDonB.xsd</DependentUpon>
+    </None>
+    <None Include="HoaDonB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HoaDonB.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="HoaDonB.xss">
+      <DependentUpon>HoaDonB.xsd</DependentUpon>
+    </None>
+    <None Include="HoaDonN.xsc">
+      <DependentUpon>HoaDonN.xsd</DependentUpon>
+    </None>
+    <None Include="HoaDonN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HoaDonN.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="HoaDonN.xss">
+      <DependentUpon>HoaDonN.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-square-interface-modern-background-concept-fingerprint-digital-scanning-visual-security-system-authentication-login-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-hoa-cuc-trang-1-11-10-28-00.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ban-phim-laptop-bi-loi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-may-tinh-de-thuong-nhat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-computer-illustration-png-image_6567230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cach-ket-noi-man-hinh-may-tinh-de-ban-voi-laptop-may-tinh-de-ban-pc-win-10-win-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1025_cach_cai_hinh_nen_may_tinh_vo_cung_don_gian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0bba15392decda38135e0ba1465dac2b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-dep-mau-trang_104324637.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-chill-nhe-nhang_085528030.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-powerpoint-xanh-la-cay-nhe-nhang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-illustration-of-a-3d-render-showcasing-a-concept-of-web-ui-picture-image_13289194.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-nhe-nhang-dep-tuyet_085535337.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-xanh-nhe-nhang-tinh-te-cho-PowerPoint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-nhe-nhang-cute-ve-con-voi.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
